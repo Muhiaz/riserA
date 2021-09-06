@@ -1,15 +1,4 @@
-// var myNav = document.querySelector('.head');
-// window.onscroll = function () { 
-//     "use strict";
-//     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
-//         myNav.classList.add("nav-colored");
-//         myNav.classList.remove("nav-transparent");
-//     } 
-//     else {
-//         myNav.classList.add("nav-transparent");
-//         myNav.classList.remove("nav-colored");
-//     }
-// };
+
 const slides = document.querySelector('.slider').children;
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
@@ -53,17 +42,7 @@ function autoslides(){
 let timer = setInterval(autoslides,3000);
 
 
-let nav = document.querySelector('.head');
-window.onscroll = function(){
-    "use strict";
-    if(document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50){
-        nav.classList.add('nav-colored');
-    }
-    else{
-        nav.classList.remove('nav-colored');
-        nav.classList.add('nav-transparent');
-    }
-}
+
 
 const navtoggler = document.querySelector('.nav__toggle');
 const navmenu = document.querySelector('.nav__menu');
@@ -109,7 +88,7 @@ function changeCircle1(){
     }
     slider1[index1].classList.add('active');
 }
-const navlink = document.querySelector('.nav__item');
+const navlink = document.querySelector('.nav__link');
 navmenu.addEventListener('click',()=>{
     navmenu.classList.toggle('displayit');
 })

@@ -57,7 +57,7 @@ a{
 	left: 0;
 	top: 0;
 	width: 100%;
-	background: transparent;
+	background: #fff;
 	z-index: var(--z-index-fixed);
 }
 .nav{
@@ -86,9 +86,8 @@ a{
 	display: none;
 }
 }
-.{
-	padding-top: 7rem;
-	pad
+.services{
+	
 }
 .slide{
 	position: absolute;
@@ -242,7 +241,7 @@ a{
 	
 }
 .nav__logo img{
-	width: 120px; height: 110px;
+	width: 80px; height: 80px;
 }
 .prev{
 	position: absolute;
@@ -314,7 +313,6 @@ background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
 .projects{
 	height: auto;
 	padding-bottom: 5rem;
-	padding-top: 7rem;
 }
 .divbodyz{
 	width: 100%;
@@ -581,27 +579,28 @@ width: 100%;
 }
 
 @media screen and (max-width: 768px){
-	.nav{
-		justify-items: space-evenly;
-	}
 	.nav__menu{
-		padding: 2rem;
 		position: fixed;
 		right: -100%;
-		top: calc(var(--header-height)+ 1rem );
+		top: calc(var(--header-height));
 		background-color: #000;
+		height: 100%;
 		width: 80%;
-		height: 100vh;
+		padding:5rem 2rem;
 	}
 	.next,.prev{
 		opacity: 0;
 	}
 	.projects .col-md-4 .div{
 		flex-direction: column;
-		text-align: center;
+	}
+	.nav__list{
+		position: absolute;
+		top: 0;
+		left: 10px;
 	}
 	.nav__item{
-		margin-bottom: 05px;
+		margin-bottom: 10px;
 	}
 	.nav__list a{
 		color: #fff;
