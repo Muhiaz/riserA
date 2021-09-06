@@ -109,3 +109,7 @@ function changeCircle1(){
     }
     slider1[index1].classList.add('active');
 }
+const navlink = document.querySelector('.nav__item');
+navmenu.addEventListener('click',()=>{
+    navmenu.classList.toggle('displayit');
+})
