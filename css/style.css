@@ -593,6 +593,7 @@ width: 100%;
 	}
 	.projects .col-md-4 .div{
 		flex-direction: column;
+		text-align: center;
 	}
 	.nav__list{
 		position: absolute;
