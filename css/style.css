@@ -67,7 +67,8 @@ a{
 	height: var(--header-height);
 }
 .home{
-	min-height: 100vh;
+	min-height: 95vh;
+
 }
 @media screen and (min-width: 768px){
 a{
@@ -93,11 +94,10 @@ a{
 	position: absolute;
 	background-size: cover;
 	background-position: center;
-	height: 85%;
-	width: 100%;
+	height: 80%;
+	width:100%;
 	opacity: 0;
 	top: calc(var(--header-height) + 0.5rem);
-	border-radius: 5px;
 }
 .slide.active{
 	opacity: 1;
@@ -105,17 +105,19 @@ a{
 .slide .caption{
 	position: absolute;
 	top: 50%;
-	left: 5%;
+	left: 15%;
 	transform: translateY(-50%);
 	line-height: 40px;
+
 }
 .caption h1{
-	font-size: var(--big-font-size);
+	font-size: calc(var(--big-font-size) + 2rem);
 	color: #fff;
 	letter-spacing: 3px;
+	font-weight: bold;
 }
 .caption p{
-	font-size: var(--h2-font-size);
+	font-size: calc(var(--h2-font-size) + 12rem);
 	color: #fff;
 	letter-spacing: 3px;
 	width: 70%;
@@ -360,6 +362,7 @@ background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
 	justify-content: center;
 	align-items: center;
 	background-color: #fff;
+	border-right: 2px solid sandybrown;
 	box-shadow: 0 1px 4px rgba(146,161,176,.15); 
 	background: linear-gradient(to right, #fff 50%, sandybrown 50%);
 background-size: 200% 100%;
@@ -371,7 +374,7 @@ background-position:left bottom;
 background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);*/
 .projects .col-md-4 .div:hover {
     background-position: right bottom;
-    transition:all 1s ease;
+    transition:all 0.8s ease;
     color: #fff;
     
 }
@@ -550,7 +553,7 @@ width: 100%;
 		color: #000;
 	}
 	50%{
-		color: yellow;
+		color: sandybrown;
 	}
 	100%{
 		color: purple;
