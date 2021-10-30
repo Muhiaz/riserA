@@ -18,6 +18,10 @@
 	--z-index-tooltip: 10;
 	--z-index-fixed: 100;
 }
+@font-face{
+	font-family: "Lobster";
+	src: '../fonts/Lobster/Lobster-Regular.ttf';
+}
 *{
 	box-sizing: border-box;
 }
@@ -288,6 +292,7 @@ background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
 	text-align: center;
 	position: relative;
 	margin-bottom: 30px;
+	font-family: 'Lobster';
 
 	
 }

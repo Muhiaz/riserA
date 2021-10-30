@@ -36,6 +36,14 @@ function changeCircle(){
     }
     slides[index].classList.add('active');
 }
+const navilink = document.querySelectorAll('.nav__link');
+const navmenu = document.querySelector('.nav__menu');
+function linkAction(){
+    navilink.forEach(n =>n.classList.remove('active'))
+    this.classList.add('active')
+    navmenu.classList.remove('displayit');
+}
+navilink.forEach(n => n.addEventListener('click',linkAction))
 function autoslides(){
     nextSlide();
 }
@@ -45,7 +53,7 @@ let timer = setInterval(autoslides,3000);
 
 
 const navtoggler = document.querySelector('.nav__toggle');
-const navmenu = document.querySelector('.nav__menu');
+
 
 navtoggler.addEventListener('click',()=>{
     navmenu.classList.toggle('displayit');
