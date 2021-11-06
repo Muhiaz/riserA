@@ -625,6 +625,9 @@ width: 100%;
 		color: #fff;
 		font-weight: bold;
 	}
+	.caption h1{
+		font-size: 20px;
+	}
 }
 .displayit{
 	padding: 2rem;
