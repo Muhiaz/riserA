@@ -99,4 +99,4 @@ function changeCircle1(){
 const navlink = document.querySelector('.nav__link');
 navmenu.addEventListener('click',()=>{
     navmenu.classList.toggle('displayit');
-})
+});
